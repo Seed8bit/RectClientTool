@@ -198,7 +198,6 @@ class ActionBuilder():
         else:
             raise ValueError('gpio output state need specify')
         return action
-        #return self.__send_request('POST', '/hardware/operation',  json.dumps(action))
 
     @staticmethod
     def UartAction(uart_id: int, speed_selection: UartSpeed, parity: UartParity, stop_bit: UartStopBit, data_size: UartDataSize,
